@@ -1,0 +1,45 @@
+<svg width="160" height="150" viewBox="0 0 160 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grapefruit Slices -->
+  <g>
+    <ellipse cx="40" cy="55" rx="28" ry="18" fill="#F7B6B6"/>
+    <ellipse cx="120" cy="55" rx="28" ry="18" fill="#F7B6B6"/>
+    <!-- Left slice segments -->
+    <path d="M40 55 L40 37" stroke="#FFF" stroke-width="2"/>
+    <path d="M40 55 L25 42" stroke="#FFF" stroke-width="2"/>
+    <path d="M40 55 L55 42" stroke="#FFF" stroke-width="2"/>
+    <path d="M40 55 L28 55" stroke="#FFF" stroke-width="2"/>
+    <path d="M40 55 L52 55" stroke="#FFF" stroke-width="2"/>
+    <!-- Right slice segments -->
+    <path d="M120 55 L120 37" stroke="#FFF" stroke-width="2"/>
+    <path d="M120 55 L105 42" stroke="#FFF" stroke-width="2"/>
+    <path d="M120 55 L135 42" stroke="#FFF" stroke-width="2"/>
+    <path d="M120 55 L108 55" stroke="#FFF" stroke-width="2"/>
+    <path d="M120 55 L132 55" stroke="#FFF" stroke-width="2"/>
+  </g>
+  <!-- Shot Glasses -->
+  <g>
+    <!-- Left glass -->
+    <g transform="rotate(-12 60 100)">
+      <rect x="45" y="70" width="30" height="50" rx="8" fill="#FFF8E7" stroke="#1C4A6E" stroke-width="2"/>
+      <rect x="50" y="80" width="20" height="30" rx="6" fill="#FF7F2A"/>
+      <path d="M50 80 Q55 75 65 80" stroke="#1C4A6E" stroke-width="2" fill="none"/>
+      <path d="M50 110 Q60 120 70 110" stroke="#1C4A6E" stroke-width="2" fill="none"/>
+      <path d="M55 90 Q60 95 65 90" stroke="#1C4A6E" stroke-width="2" fill="none"/>
+    </g>
+    <!-- Right glass -->
+    <g transform="rotate(12 100 100)">
+      <rect x="85" y="70" width="30" height="50" rx="8" fill="#FFF8E7" stroke="#1C4A6E" stroke-width="2"/>
+      <rect x="90" y="80" width="20" height="30" rx="6" fill="#FF7F2A"/>
+      <path d="M90 80 Q95 75 105 80" stroke="#1C4A6E" stroke-width="2" fill="none"/>
+      <path d="M90 110 Q100 120 110 110" stroke="#1C4A6E" stroke-width="2" fill="none"/>
+      <path d="M95 90 Q100 95 105 90" stroke="#1C4A6E" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+  <!-- Sparkles -->
+  <g fill="#FF7F2A">
+    <polygon points="80,20 85,30 80,40 75,30"/>
+    <polygon points="60,30 63,36 60,42 57,36"/>
+    <polygon points="100,30 103,36 100,42 97,36"/>
+    <polygon points="90,10 93,16 90,22 87,16"/>
+  </g>
+</svg> 
