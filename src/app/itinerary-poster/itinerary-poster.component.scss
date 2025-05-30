@@ -1,0 +1,103 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
+
+// BEM: .itinerary-poster__confetti
+.confetti {
+  height: 60px;
+  pointer-events: none;
+  z-index: 2;
+  background: none;
+  position: relative;
+  overflow: visible;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #a259f7 0 8px,
+      transparent 8px 12px,
+      #f76ca7 12px 20px,
+      transparent 20px 24px,
+      #ffb86c 24px 32px,
+      transparent 32px 36px,
+      #f7e259 36px 44px,
+      transparent 44px 48px,
+      #7cf76c 48px 56px,
+      transparent 56px 60px
+    );
+    opacity: 0.7;
+    animation: confetti-fall 2.5s linear infinite alternate;
+  }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
+
+.hand-illustration {
+  width: 60px;
+  height: 80px;
+  background: url('/assets/hand-sparkles.svg') no-repeat center/contain;
+  animation: hand-wave 1.5s infinite alternate ease-in-out;
+}
+@keyframes hand-wave {
+  0% { transform: rotate(-5deg); }
+  100% { transform: rotate(8deg); }
+}
+
+.cocktail-illustration {
+  width: 70px;
+  height: 60px;
+  background: url('/assets/cocktail-glasses.svg') no-repeat center/contain;
+  animation: cocktail-bounce 1.2s infinite alternate;
+}
+@keyframes cocktail-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+.flower-decorations {
+  width: 90px;
+  height: 40px;
+  background: url('/assets/flowers.svg') no-repeat center/contain;
+}
+
+.disco-ball-illustration {
+  width: 70px;
+  height: 70px;
+  background: url('/assets/disco-ball.svg') no-repeat center/contain;
+  animation: disco-spin 2.5s linear infinite;
+  box-shadow: 0 0 16px 2px #a259f7, 0 0 8px 2px #f76ca7;
+}
+@keyframes disco-spin {
+  0% { transform: rotate(-10deg); filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+  100% { transform: rotate(10deg); filter: brightness(1); }
+}
+
+.bg-light {
+  background-color: #fffdfa !important;
+}
+
+.text-pink {
+  color: #f76ca7 !important;
+}
+.text-orange {
+  color: #ffb86c !important;
+}
+.text-purple {
+  color: #a259f7 !important;
+}
+.border-pink {
+  border-color: #f76ca7 !important;
+}
+
+// Responsive tweaks
+@media (max-width: 767.98px) {
+  .confetti { height: 40px; }
+  .hand-illustration, .disco-ball-illustration { width: 48px; height: 56px; }
+  .cocktail-illustration { width: 48px; height: 40px; }
+  .flower-decorations { width: 60px; height: 28px; }
+} 
