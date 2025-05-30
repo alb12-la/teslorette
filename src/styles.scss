@@ -1,3 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
+
+/* Shared Variables */
+:root {
+  --font-primary: 'Quicksand', sans-serif;
+  --font-mono: 'Chivo Mono', monospace;
+  --color-primary: #2D5A3D;
+  --color-secondary: #FF6B6B;
+  --color-accent: #A8C09A;
+  --color-background: #FAF9F6;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  color: var(--color-primary);
+  background-color: var(--color-background);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Utility Classes */
+.text-pink { color: #f76ca7 !important; }
+.text-orange { color: #ffb86c !important; }
+.text-purple { color: #a259f7 !important; }
+.border-pink { border-color: #f76ca7 !important; }
+.bg-light { background-color: #fffdfa !important; }
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container-lg {
+    padding: 1rem;
+  }
+}
