@@ -1,4 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
 
 // BEM: .itinerary-poster__confetti
 .confetti {
@@ -141,14 +142,36 @@
 }
 
 .event-description {
-  font-family: 'Quicksand', sans-serif;
-  color: #A8C09A;
+  font-family: 'Chivo Mono', monospace;
+  color: #2D5A3D;
+  i {
+    margin-right: 0.5rem;
+    color: #FF6B6B;
+  }
+  &:hover {
+    color: #FF6B6B;
+    cursor: pointer;
+    i {
+      color: #2D5A3D;
+    }
+  }
 }
 
 .event-address {
   font-family: 'Chivo Mono', monospace;
   color: #2D5A3D;
   font-style: normal;
+  i {
+    margin-right: 0.5rem;
+    color: #FF6B6B;
+  }
+  &:hover {
+    color: #FF6B6B;
+    cursor: pointer;
+    i {
+      color: #2D5A3D;
+    }
+  }
 }
 
 /* Layout */
