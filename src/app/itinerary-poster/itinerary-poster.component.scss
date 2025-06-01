@@ -30,8 +30,8 @@
 }
 
 @keyframes confetti-fall {
-  0% { transform: translateY(-10px); }
-  100% { transform: translateY(10px); }
+  from { transform: translateY(-10px); }
+  to { transform: translateY(10px); }
 }
 
 .hand-illustration {
@@ -41,8 +41,8 @@
   animation: hand-wave 1.5s infinite alternate ease-in-out;
 }
 @keyframes hand-wave {
-  0% { transform: rotate(-5deg); }
-  100% { transform: rotate(8deg); }
+  from { transform: rotate(-5deg); }
+  to { transform: rotate(8deg); }
 }
 
 .cocktail-illustration {
@@ -52,8 +52,8 @@
   animation: cocktail-bounce 1.2s infinite alternate;
 }
 @keyframes cocktail-bounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
 }
 
 .flower-decorations {
@@ -70,8 +70,8 @@
   box-shadow: 0 0 16px 2px #a259f7, 0 0 8px 2px #f76ca7;
 }
 @keyframes disco-spin {
-  0% { transform: rotate(-10deg); }
-  100% { transform: rotate(10deg); }
+  from { transform: rotate(-10deg); }
+  to { transform: rotate(10deg); }
 }
 
 @keyframes disco-glow {
@@ -124,6 +124,7 @@ img[src*="discoball.png"] {
   bottom: -121px;
   max-width: 165px;
   left: -117px;
+  transform-origin: center center;
 }
 
 .bg-light {
@@ -356,15 +357,16 @@ img[src*="drinks.png"] {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
   transform: translateY(-8px) scale(1.05);
   filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.2));
+  transform-origin: center center;
 }
 
 @keyframes drinks-tilt {
-  0% { transform: translateY(-8px) rotate(-3deg); }
-  100% { transform: translateY(-8px) rotate(3deg); }
+  from { transform: translateY(-8px) rotate(-3deg); }
+  to { transform: translateY(-8px) rotate(3deg); }
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
+  from { transform: translateY(0); }
   50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  to { transform: translateY(0); }
 } 
